@@ -1,7 +1,9 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import MainLayout from "../layouts/MainLayout";
 import Home from "../pages/Home";
 import About from "../pages/About";
 import Content from "../pages/Content";
+import ContentExpanded from "../pages/ContentExpanded";
 import DailyThought from "../pages/DailyThought";
 import PieceOfMind from "../pages/PieceOfMind";
 import Abroad from "../pages/Abroard";
@@ -23,7 +25,12 @@ const router = createBrowserRouter([
   },
   {
     path: "/content",
-    element: <Content />,
+    element: <MainLayout />,
+    children: [
+      { index: true, element: <Content /> },
+      { path: "/content/life-abroad", element: <Abroad /> },
+      { path: "/content/content-expanded", element: <ContentExpanded /> }
+    ],
   },
   {
     path: "/content/daily-thoughts",
@@ -32,10 +39,6 @@ const router = createBrowserRouter([
   {
     path: "/content/piece-of-mind",
     element: <PieceOfMind />,
-  },
-  {
-    path: "/content/life-abroad",
-    element: <Abroad />,
   },
   {
     path: "/content/passions",

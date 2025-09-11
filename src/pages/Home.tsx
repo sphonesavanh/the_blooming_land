@@ -5,9 +5,9 @@ import HomePic from "/images/home.jpg";
 
 const Home: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[#647b4e]">
+    <div className="min-h-screen bg-[url('/images/background.png')] bg-cover bg-center">
       {/* Navbar */}
-      <header className="bg-[#647b4e]">
+      <header className="bg-[#493a2f]">
         <img
           src={Logo} // Replace with your logo or use text
           alt="Bloomin' Land Logo"

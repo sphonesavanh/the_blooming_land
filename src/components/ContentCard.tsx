@@ -1,9 +1,8 @@
 import type React from "react";
-import { Plus } from "lucide-react";
 
 interface ContentCardProps {
   title: string;
-  backgroundColor: string;
+  backgroundColor: string; // ex: "bg-blue-300"
   textColor?: string;
   decorativeElement?: React.ReactNode;
   size?: "small" | "medium" | "large";
@@ -14,49 +13,35 @@ interface ContentCardProps {
 export const ContentCard = ({
   title,
   backgroundColor,
-  textColor = "text-white",
-  decorativeElement,
+  textColor = "text-black",
   size = "medium",
   onClick,
   className,
 }: ContentCardProps) => {
   const sizeClasses = {
-    small: "h-40 w-40",
-    medium: "h-58 w-58",
-    large: "h-100 w-70",
+    small: "h-32 w-32",
+    medium: "h-36 w-36",
+    large: "h-44 w-44",
   };
 
   return (
     <div
       className={`
-      ${sizeClasses[size]}
-      ${backgroundColor}
-      ${textColor}
-      rounded-3xl
-      p-6
-      relative
-      cursor-pointer
-      transition-transform
-      hover:scale-105
-      flex
-      flex-col
-      justify-between
-      shadow-lg
-      ${className ?? ""}
-    `}
+        ${sizeClasses[size]}
+        ${backgroundColor}
+        ${textColor}
+        flex items-center justify-center
+        text-center font-serif
+        text-lg
+        cursor-pointer
+        transition-transform
+        hover:scale-105
+        ${className ?? ""}
+        stamp-shape
+      `}
       onClick={onClick}
     >
-      <div className="absolute top-4 right-4">
-        <div className="w-8 h-8 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
-          <Plus className="w-4 h-4 text-white" />
-        </div>
-      </div>
-
-      <h2 className="text-xl font-bold">{title}</h2>
-
-      {decorativeElement && (
-        <div className="mt-4">{decorativeElement}</div>
-      )}
+      <h2 className="px-2">{title}</h2>
     </div>
   );
 };

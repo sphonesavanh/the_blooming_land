@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 const Abroad: React.FC = () => {
   return (
-    <div>
+    <div className="pt-20 px-8">
       <Link to="/content">
         <ArrowBackIcon />
       </Link>
