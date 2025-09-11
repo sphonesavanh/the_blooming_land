@@ -1,10 +1,13 @@
 import AppRouter from "./routes";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <>
-      <AppRouter />
-    </>
+    <HashRouter>
+      <Routes>
+        <Route path="/*" element={<AppRouter />} />
+      </Routes>
+    </HashRouter>
   );
 }
 
