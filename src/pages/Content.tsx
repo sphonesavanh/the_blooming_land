@@ -15,7 +15,7 @@ export default function Content() {
         <img
           src={Logo}
           alt="Bloomin' Land Logo"
-          className="absolute top-20 left-0 w-28 h-auto"
+          className="absolute top-20 left-0 w-30 h-30"
         />
       </div>
 

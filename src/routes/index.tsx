@@ -4,7 +4,7 @@ import Home from "../pages/Home";
 import About from "../pages/About";
 import Content from "../pages/Content";
 import ContentExpanded from "../pages/ContentExpanded";
-import DailyThought from "../pages/DailyThought";
+import DailyThought from "../pages/DailyThoughts/DailyThought";
 import PieceOfMind from "../pages/PieceOfMind";
 import Abroad from "../pages/Abroard";
 import Passions from "../pages/Passions";
@@ -29,7 +29,7 @@ const router = createBrowserRouter([
     children: [
       { index: true, element: <Content /> },
       { path: "/content/life-abroad", element: <Abroad /> },
-      { path: "/content/content-expanded", element: <ContentExpanded /> }
+      { path: "/content/content-expanded", element: <ContentExpanded /> },
     ],
   },
   {

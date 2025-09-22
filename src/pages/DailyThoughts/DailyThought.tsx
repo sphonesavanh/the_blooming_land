@@ -1,8 +1,8 @@
 import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import { Link } from "react-router-dom";
 import Logo from "/images/blm_logo.png";
-import DailyCard from "../components/pages/DailyCard";
-import DailyNote from "../components/pages/DailyNote";
+import DailyCard from "../../components/pages/DailyCard";
+import DailyNote from "../../components/pages/DailyNote";
 
 const DailyThought: React.FC = () => {
   return (
