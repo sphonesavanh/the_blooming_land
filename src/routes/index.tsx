@@ -5,8 +5,10 @@ import About from "../pages/About";
 import Content from "../pages/Content";
 import ContentExpanded from "../pages/ContentExpanded";
 import DailyThought from "../pages/DailyThoughts/DailyThought";
+import DailyContent from "../pages/DailyThoughts/DailyContent";
 import PieceOfMind from "../pages/PieceOfMind";
-import Abroad from "../pages/Abroard";
+import Abroad from "../pages/Abroad";
+import Abroad2 from "../pages/Abroad2";
 import Passions from "../pages/Passions";
 import Byelinguals from "./../pages/Byelinguals";
 import HowRU from "../pages/HowRU";
@@ -30,11 +32,16 @@ const router = createBrowserRouter([
       { index: true, element: <Content /> },
       { path: "/content/life-abroad", element: <Abroad /> },
       { path: "/content/content-expanded", element: <ContentExpanded /> },
+      { path: "/content/life-abroad2", element: <Abroad2 /> },
     ],
   },
   {
     path: "/content/daily-thoughts",
     element: <DailyThought />,
+  },
+  {
+    path: "/content/daily-thoughts/:id",
+    element: <DailyContent />,
   },
   {
     path: "/content/piece-of-mind",

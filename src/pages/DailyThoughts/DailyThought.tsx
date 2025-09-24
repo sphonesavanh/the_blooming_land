@@ -7,23 +7,26 @@ import DailyNote from "../../components/pages/DailyNote";
 const DailyThought: React.FC = () => {
   return (
     <div className="min-h-screen bg-[url('/images/background.png')] bg-cover bg-center">
-      <Link
-        to="/content"
-        className="flex flex-row items-center hover:translate-y-7/120 transition-transform"
-      >
-        <ArrowBackIcon />
+      <div className="flex flex-row justify-between items-center">
+        <Link
+          to="/content"
+          className="flex flex-row items-center hover:translate-y-4/120 hover:underline transition-transform"
+        >
+          <ArrowBackIcon />
+          <h1 className="font-serif text-2xl text-[#493a2f] pl-3">Back</h1>
+        </Link>
+
         <h1 className="font-serif text-4xl text-[#493a2f]">Daily Thoughts</h1>
-      </Link>
-      <div className="flex flex-row items-center justify-end px-8">
+
         {/* Logo */}
         <img src={Logo} alt="Bloomin' Land Logo" className="w-28 h-auto" />
       </div>
+
       <div className="border-4 border-[#493a2f]" />
-      <DailyCard />
-      <DailyCard />
-      <DailyCard />
-      <DailyCard />
-      <DailyNote />
+      <div className="flex">
+        <DailyCard />
+        <DailyNote />
+      </div>
     </div>
   );
 };

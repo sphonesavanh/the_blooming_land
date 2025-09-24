@@ -19,7 +19,7 @@ const ContentExpanded: React.FC = () => {
           <img
             src={Logo}
             alt="Logo"
-            className="absolute top-20 left-0 w-28 h-auto"
+            className="absolute top-20 left-0 w-40 h-40"
           />
         </div>
 
