@@ -16,5 +16,17 @@
     "img": "/images/about.jpg",
     "title": "Third Thought",
     "content": "This is the third thought of the day"
+  },
+  {
+    "id": "4",
+    "img": "/images/about.jpg",
+    "title": "Third Thought",
+    "content": "This is the third thought of the day"
+  },
+  {
+    "id": "5",
+    "img": "/images/about.jpg",
+    "title": "Third Thought",
+    "content": "This is the third thought of the day"
   }
 ]

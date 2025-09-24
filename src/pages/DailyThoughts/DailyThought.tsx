@@ -23,7 +23,7 @@ const DailyThought: React.FC = () => {
       </div>
 
       <div className="border-4 border-[#493a2f]" />
-      <div className="flex">
+      <div className="grid grid-cols-2">
         <DailyCard />
         <DailyNote />
       </div>
