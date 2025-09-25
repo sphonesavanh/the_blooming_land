@@ -10,12 +10,12 @@ const DailyNote: React.FC = () => {
   };
 
   return (
-    <div className="flex justify-end pt-6">
+    <div className="max-h-sreen flex justify-end pt-6">
       {!isOpen ? (
         // Collapsed vertical button
         <button
           onClick={toggleModal}
-          className="flex flex-col items-center bg-blue-500 text-white px-2 py-4 rounded-md hover:bg-blue-600 transition"
+          className="flex flex-col items-center bg-white text-black px-2 py-4 rounded-md hover:bg-gray-300 transition"
         >
           <NavigateBeforeIcon />
           <span className="mt-2 rotate-90">Note</span>
@@ -24,18 +24,26 @@ const DailyNote: React.FC = () => {
         // Expanded box
         <div className="bg-white shadow-lg rounded-lg p-4 w-64 transition-all duration-300">
           <div className="flex justify-between items-center">
-            <span className="font-semibold text-gray-800">Note</span>
             <button
               onClick={toggleModal}
-              className="text-gray-600 hover:text-black"
+              className="flex text-gray-600 hover:text-black"
             >
               <NavigateNextIcon />
+              <span className="font-semibold text-gray-800">Note</span>
             </button>
           </div>
 
-          <div className="mt-4 text-gray-700">
-            <p>Hello 👋 This is your note!</p>
-            <p>You can put more content here...</p>
+          <div className="mt-4 text-gray-700 font-serif">
+            <p>
+              Daily thoughts: opinion based articles where our authors express
+              their perspective freely based on the study, reference and
+              experiences.
+            </p>
+            <br />
+            <p>
+              we aware that all individuals hold different value and personal
+              experience.
+            </p>
           </div>
         </div>
       )}

@@ -6,7 +6,8 @@ import DailyNote from "../../components/pages/DailyNote";
 
 const DailyThought: React.FC = () => {
   return (
-    <div className="min-h-screen bg-[url('/images/background.png')] bg-cover bg-center">
+    <div className="min-h-screen flex flex-col bg-[url('/images/background.png')] bg-cover bg-center">
+      {/* Header */}
       <div className="flex flex-row justify-between items-center">
         <Link
           to="/content"
@@ -18,14 +19,22 @@ const DailyThought: React.FC = () => {
 
         <h1 className="font-serif text-4xl text-[#493a2f]">Daily Thoughts</h1>
 
-        {/* Logo */}
         <img src={Logo} alt="Bloomin' Land Logo" className="w-28 h-auto" />
       </div>
 
-      <div className="border-4 border-[#493a2f]" />
-      <div className="grid grid-cols-2">
-        <DailyCard />
-        <DailyNote />
+      <div className="border-4 border-[#493a2f] shrink-0" />
+
+      {/* Main area fills the rest of the screen */}
+      <div className="flex flex-1">
+        {/* Left: scrollable DailyCard */}
+        <div className="flex-1 overflow-y-auto">
+          <DailyCard />
+        </div>
+
+        {/* Right: sticky DailyNote */}
+        <div className="w-80 shrink-0 sticky top-0 self-start">
+          <DailyNote />
+        </div>
       </div>
     </div>
   );

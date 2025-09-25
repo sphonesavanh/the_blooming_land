@@ -15,8 +15,10 @@ const Abroad: React.FC = () => {
         />
       </header>
       <Link to="/content/life-abroad2">
-        <div className="absolute top-40 left-180 align-center">
-          Home <br /> Away <br /> From Home
+        <div className="font-serif absolute top-30 left-180 align-center hover:underline">
+          <p className="font-bold text-2xl justify-self-center">Home</p>
+          <p className="text-lg justify-self-center">Away</p>
+          <p className="font-bold text-2xl justify-self-center">From Home</p>
         </div>
       </Link>
 
@@ -25,16 +27,28 @@ const Abroad: React.FC = () => {
         <img
           src={Map}
           alt="Map"
-          className="absolute top-60 left-50 w-auto h-auto ml-60"
+          className="absolute top-60 left-55 w-auto h-auto ml-60"
         />
       </div>
 
       {/* Text */}
-      <div className="absolute top-80 left-50">
-        <p className="text-black">Explore the world with us!</p>
+      <div className="absolute top-70 left-40">
+        <p className="text-black">
+          To be apart from your hometown, <br />
+          and how the new city has shaped you. <br />
+          The joys and the bitterness of life abroad. <br /> Behind the scenes,{" "}
+          <br /> where the wear, tear, and sweat are visible, <br /> yet seldom
+          seen by others.
+        </p>
       </div>
-      <div className="absolute top-80 right-50">
-        <p className="text-black">Explore the world with us!</p>
+      <div className="absolute top-70 right-30">
+        <p className="text-black">
+          To be apart from your hometown, <br />
+          and how the new city has shaped you. <br />
+          The joys and the bitterness of life abroad. <br /> Behind the scenes,{" "}
+          <br /> where the wear, tear, and sweat are visible, <br /> yet seldom
+          seen by others.
+        </p>
       </div>
 
       {/* flag */}

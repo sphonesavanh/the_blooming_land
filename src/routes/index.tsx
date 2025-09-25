@@ -2,11 +2,13 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import MainLayout from "../layouts/MainLayout";
 import Home from "../pages/Home";
 import About from "../pages/About";
+import Contact from "../pages/Contact";
 import Content from "../pages/Content";
 import ContentExpanded from "../pages/ContentExpanded";
 import DailyThought from "../pages/DailyThoughts/DailyThought";
 import DailyContent from "../pages/DailyThoughts/DailyContent";
-import PieceOfMind from "../pages/PieceOfMind";
+import PieceOfMind from "../pages/PieceOfMind/PieceOfMind";
+import PieceContent from "../pages/PieceOfMind/PieceContent";
 import Abroad from "../pages/Abroad";
 import Abroad2 from "../pages/Abroad2";
 import Passions from "../pages/Passions";
@@ -24,6 +26,10 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About />,
+  },
+  {
+    path: "/contact",
+    element: <Contact />,
   },
   {
     path: "/content",
@@ -46,6 +52,10 @@ const router = createBrowserRouter([
   {
     path: "/content/piece-of-mind",
     element: <PieceOfMind />,
+  },
+  {
+    path: "/content/piece-of-mind/:id",
+    element: <PieceContent />,
   },
   {
     path: "/content/passions",

@@ -29,10 +29,10 @@ const Home: React.FC = () => {
             {/*Text Overlay*/}
             <div className="absolute inset-0 flex pt-20 md:pt-30">
               <div className="pl-12 md:pl-16">
-                <h1 className="text-[#E8B4CB] font-serif text-6xl md:text-8xl lg:text-9xl leading-none tracking-wide">
+                <h1 className="text-[#493a2f] font-serif text-6xl md:text-8xl lg:text-9xl leading-none tracking-wide">
                   bloomin'
                   <br />
-                  <p className="justify-self-center">land</p>
+                  <p className="text-white justify-self-center">land</p>
                 </h1>
               </div>
             </div>
@@ -41,7 +41,7 @@ const Home: React.FC = () => {
             <div className="absolute bottom-8 right-8">
               <Link
                 to="/about"
-                className="bg-[#E8B4CB] font-serif text-xl text-black px-8 py-3 rounded-full font-medium hover:bg-[#E8B4CB]/90 transition-colors"
+                className="bg-[#493a2f] text-white font-serif text-xl px-8 py-3 rounded-full font-medium hover:bg-[#493a2f]/90 transition-colors"
               >
                 more
               </Link>

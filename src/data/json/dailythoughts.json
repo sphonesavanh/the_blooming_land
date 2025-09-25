@@ -20,13 +20,13 @@
   {
     "id": "4",
     "img": "/images/about.jpg",
-    "title": "Third Thought",
+    "title": "Fourth Thought",
     "content": "This is the third thought of the day"
   },
   {
     "id": "5",
     "img": "/images/about.jpg",
-    "title": "Third Thought",
+    "title": "Fifth Thought",
     "content": "This is the third thought of the day"
   }
 ]

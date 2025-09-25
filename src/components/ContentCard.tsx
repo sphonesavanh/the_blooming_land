@@ -33,11 +33,11 @@ export const ContentCard = ({
         flex items-center justify-center
         text-center font-serif
         text-lg
+        rounded-2xl
         cursor-pointer
         transition-transform
         hover:scale-105
         ${className ?? ""}
-        stamp-shape
       `}
       onClick={onClick}
     >
